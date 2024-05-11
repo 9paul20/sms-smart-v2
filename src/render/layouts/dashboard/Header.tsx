@@ -1,7 +1,7 @@
 function Header() {
   return (
     <>
-      <h1>Header del Landing</h1>
+      <h1>Header del Dashboard</h1>
     </>
   );
 }

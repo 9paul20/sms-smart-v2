@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <h1>Footer del Landing</h1>
+      <h1>Footer del Dashboard</h1>
     </>
   );
 }

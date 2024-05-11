@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
-
-export default class Clients extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Listado de Clientes</h1>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <>
+      <h1 className="text-3xl font-bold underline">Dashboard Index</h1>
+    </>
+  );
 }
+
+export default App;
