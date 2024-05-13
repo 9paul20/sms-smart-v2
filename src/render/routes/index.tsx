@@ -4,8 +4,8 @@ import {
   RouterProvider,
   useNavigation,
 } from "react-router-dom";
-import Login from "../pages/landing/Login";
-import Index from "../pages/dashboard";
+import LandingLogin from "../pages/landing/Login";
+import DashboardIndex from "../pages/dashboard";
 import LandingLayout from "../layouts/landing/Layout";
 import DashboardLayout from "../layouts/dashboard/Layout";
 
@@ -29,12 +29,12 @@ const router = createBrowserRouter([
       {
         index: true,
         path: "/",
-        element: <Login />,
+        element: <LandingLogin />,
       },
     ],
   },
   {
-    path: "/Dashboard",
+    path: "/dashboard",
     Component() {
       return (
         <>
@@ -47,8 +47,8 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        path: "/Dashboard",
-        element: <Index />,
+        path: "/dashboard",
+        element: <DashboardIndex />,
       },
     ],
   },
