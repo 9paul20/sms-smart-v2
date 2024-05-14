@@ -1,7 +1,7 @@
 function Header() {
   return (
     <>
-      <h1>Header del Landing</h1>
+      <header>{/* <h1>Header del Landing</h1> */}</header>
     </>
   );
 }
