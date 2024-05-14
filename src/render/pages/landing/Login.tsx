@@ -3,13 +3,19 @@ import {
   Card,
   CardBody,
   CardFooter,
+  Divider,
   Image,
   Input,
   Spacer,
 } from "@nextui-org/react";
+import useVisibilityStore from "../../../js/stores/landing/useVisibility";
+import { EyeFilledIcon } from "../../components/UI/EyeFilledIcon ";
+import { EyeSlashFilledIcon } from "../../components/UI/EyeSlashFileIcon";
 import EBlackImage from "../../assets/icons/E-black.png";
 
 function indexLanding() {
+  const { isVisible, toggleVisibility } = useVisibilityStore();
+
   return (
     <>
       <div className="flex flex-col items-center max-w-sm w-full mx-auto">
@@ -51,9 +57,22 @@ function indexLanding() {
               name="password"
               label="Contraseña"
               labelPlacement="outside"
-              type="password"
+              type={isVisible ? "text" : "password"}
               // shadow={false}
               width="100%"
+              endContent={
+                <button
+                  className="focus:outline-none"
+                  type="button"
+                  onClick={toggleVisibility}
+                >
+                  {isVisible ? (
+                    <EyeSlashFilledIcon className="text-2xl text-default-400 pointer-events-none" />
+                  ) : (
+                    <EyeFilledIcon className="text-2xl text-default-400 pointer-events-none" />
+                  )}
+                </button>
+              }
               // placeholder="password: nextui.org"
               // labelLeft={<Password set="bold" />}
               // value={values?.password}
@@ -70,6 +89,8 @@ function indexLanding() {
             </Button>
           </CardFooter>
         </Card>
+        <Spacer y={4} />
+        <Divider />
       </div>
     </>
   );
