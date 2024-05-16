@@ -33,6 +33,7 @@ function indexLanding() {
           <CardBody>
             <Input
               required
+              isClearable
               key="username"
               id="username"
               name="username"
