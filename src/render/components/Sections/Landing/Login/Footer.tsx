@@ -3,8 +3,8 @@ import { Link } from "@nextui-org/react";
 function Footer() {
   return (
     <>
-      <footer className="w-full flex items-center justify-center py-3 text-lg">
-        {/* <span className="text-default-600">Corporativo </span>
+      <div className="w-full flex items-center justify-center py-3 text-lg">
+        <span className="text-default-600">Corporativo </span>
         <Link
           isExternal
           className="flex items-center gap-1"
@@ -12,8 +12,8 @@ function Footer() {
           title="Milac.com.mx Home"
         >
           <p className="text-primary">Milac S.A. de C.V. ©</p>
-        </Link> */}
-      </footer>
+        </Link>
+      </div>
     </>
   );
 }

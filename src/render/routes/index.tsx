@@ -4,10 +4,10 @@ import {
   RouterProvider,
   useNavigation,
 } from "react-router-dom";
-import LandingLogin from "../pages/landing/Login";
-import DashboardIndex from "../pages/dashboard";
-import LandingLayout from "../layouts/landing/Layout";
-import DashboardLayout from "../layouts/dashboard/Layout";
+import LandingLogin from "../pages/Landing/Login";
+import DashboardIndex from "../pages/Dashboard";
+import LandingLayout from "../layouts/Landing/Layout";
+import DashboardLayout from "../layouts/Dashboard/Layout";
 
 const router = createBrowserRouter([
   {
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-function root() {
+function Index() {
   return (
     <>
       <RouterProvider
@@ -68,4 +68,4 @@ function root() {
   );
 }
 
-export default root;
+export default Index;
