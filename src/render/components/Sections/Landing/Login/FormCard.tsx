@@ -9,6 +9,8 @@ import {
 import { EyeFilledIcon } from "../../../UI/EyeFilledIcon ";
 import { EyeSlashFilledIcon } from "../../../UI/EyeSlashFileIcon";
 import VisibilityPasswordStore from "../../../../../js/stores/landing/VisibilityPasswordStore";
+import { UserIcon } from "../../../UI/UserIcon";
+import { PasswordIcon } from "../../../UI/PasswordIcon";
 
 function FormCard() {
   const { isVisible, toggleVisibility } = VisibilityPasswordStore();
@@ -29,6 +31,9 @@ function FormCard() {
             // labelLeft={<User set="bold" />}
             // shadow={false}
             width="100%"
+            startContent={
+              <UserIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+            }
             // placeholder="username: Arbitrary name"
             // status={errors?.username ? "error" : undefined}
             // value={values?.username}
@@ -47,6 +52,9 @@ function FormCard() {
             type={isVisible ? "text" : "password"}
             // shadow={false}
             width="100%"
+            startContent={
+              <PasswordIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+            }
             endContent={
               <button
                 className="focus:outline-none"

@@ -1,11 +1,14 @@
+import { SectionProps } from "../../../../js/interfaces";
 import SwitchTheme from "../../../components/UI/SwitchTheme";
 
-function SwitchThemeSection() {
+const SwitchThemeSection: React.FC<SectionProps> = ({ classNameSection }) => {
   return (
     <>
-      <SwitchTheme />
+      <div className={classNameSection}>
+        <SwitchTheme />
+      </div>
     </>
   );
-}
+};
 
 export default SwitchThemeSection;
