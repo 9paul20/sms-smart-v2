@@ -1,5 +1,5 @@
-import { create } from "zustand";
-import { VisibilityPassword } from "../../interfaces";
+import { create } from 'zustand';
+import type { VisibilityPassword } from '../../interfaces';
 
 const VisibilityPasswordStore = create<VisibilityPassword>()((set) => ({
   isVisible: false,

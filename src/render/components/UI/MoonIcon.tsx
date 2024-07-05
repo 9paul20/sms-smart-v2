@@ -1,4 +1,4 @@
-import { IconProps } from "../../../js/interfaces";
+import type { IconProps } from '../../../js/interfaces';
 
 export const MoonIcon: React.FC<IconProps> = (props) => (
   <svg

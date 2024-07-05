@@ -1,7 +1,7 @@
-import { FC } from "react";
-import { LayoutProps } from "../../../js/interfaces";
-import Header from "./Header";
-import Footer from "./Footer";
+import type { FC } from 'react';
+import type { LayoutProps } from '../../../js/interfaces';
+import Footer from './Footer';
+import Header from './Header';
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (

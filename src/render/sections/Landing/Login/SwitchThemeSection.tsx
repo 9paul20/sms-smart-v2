@@ -1,5 +1,5 @@
-import { SectionProps } from "../../../../js/interfaces";
-import SwitchTheme from "../../../components/UI/SwitchTheme";
+import type { SectionProps } from '../../../../js/interfaces';
+import SwitchTheme from '../../../components/UI/SwitchTheme';
 
 const SwitchThemeSection: React.FC<SectionProps> = ({ classNameSection }) => {
   return (

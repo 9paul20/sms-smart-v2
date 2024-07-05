@@ -1,9 +1,9 @@
-import { Switch } from "@nextui-org/react";
-import { useTheme } from "next-themes";
-import { useEffect } from "react";
-import { SunIcon } from "./SunIcon";
-import { MoonIcon } from "./MoonIcon";
-import { useSwitchThemeStore } from "../../../js/consts/SwitchThemeStore";
+import { Switch } from '@nextui-org/react';
+import { useTheme } from 'next-themes';
+import { useEffect } from 'react';
+import { useSwitchThemeStore } from '../../../js/consts/SwitchThemeStore';
+import { MoonIcon } from './MoonIcon';
+import { SunIcon } from './SunIcon';
 
 function SwitchTheme() {
   const { theme, setTheme } = useSwitchThemeStore();
@@ -16,14 +16,14 @@ function SwitchTheme() {
   }, [resolvedTheme, setTheme]);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const newTheme = event.target.checked ? "dark" : "light";
+    const newTheme = event.target.checked ? 'dark' : 'light';
     setTheme(newTheme);
     setNextTheme(newTheme);
   };
 
   return (
     <Switch
-      checked={theme === "dark"}
+      checked={theme === 'dark'}
       size="lg"
       color="secondary"
       startContent={<SunIcon />}

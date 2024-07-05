@@ -5,12 +5,12 @@ import {
   CardFooter,
   Input,
   Spacer,
-} from "@nextui-org/react";
-import { EyeFilledIcon } from "../../../UI/EyeFilledIcon ";
-import { EyeSlashFilledIcon } from "../../../UI/EyeSlashFileIcon";
-import VisibilityPasswordStore from "../../../../../js/stores/landing/VisibilityPasswordStore";
-import { UserIcon } from "../../../UI/UserIcon";
-import { PasswordIcon } from "../../../UI/PasswordIcon";
+} from '@nextui-org/react';
+import VisibilityPasswordStore from '../../../../../js/stores/landing/VisibilityPasswordStore';
+import { EyeFilledIcon } from '../../../UI/EyeFilledIcon ';
+import { EyeSlashFilledIcon } from '../../../UI/EyeSlashFileIcon';
+import { PasswordIcon } from '../../../UI/PasswordIcon';
+import { UserIcon } from '../../../UI/UserIcon';
 
 function FormCard() {
   const { isVisible, toggleVisibility } = VisibilityPasswordStore();
@@ -49,7 +49,7 @@ function FormCard() {
             name="password"
             label="Contraseña"
             labelPlacement="outside"
-            type={isVisible ? "text" : "password"}
+            type={isVisible ? 'text' : 'password'}
             // shadow={false}
             width="100%"
             startContent={

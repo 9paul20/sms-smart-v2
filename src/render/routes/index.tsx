@@ -1,22 +1,22 @@
 import {
-  createBrowserRouter,
   Outlet,
   RouterProvider,
+  createBrowserRouter,
   useNavigation,
-} from "react-router-dom";
-import LandingLogin from "../pages/Landing/Login";
-import DashboardIndex from "../pages/Dashboard";
-import LandingLayout from "../layouts/Landing/Layout";
-import DashboardLayout from "../layouts/Dashboard/Layout";
+} from 'react-router-dom';
+import DashboardLayout from '../layouts/Dashboard/Layout';
+import LandingLayout from '../layouts/Landing/Layout';
+import DashboardIndex from '../pages/Dashboard';
+import LandingLogin from '../pages/Landing/Login';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     Component() {
-      let navigation = useNavigation();
+      const navigation = useNavigation();
       return (
         <>
-          {navigation.state !== "idle" ? (
+          {navigation.state !== 'idle' ? (
             <div className="is-loading">Loading...</div>
           ) : null}
           <LandingLayout>
@@ -28,13 +28,13 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        path: "/",
+        path: '/',
         element: <LandingLogin />,
       },
     ],
   },
   {
-    path: "/dashboard",
+    path: '/dashboard',
     Component() {
       return (
         <>
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        path: "/dashboard",
+        path: '/dashboard',
         element: <DashboardIndex />,
       },
     ],
