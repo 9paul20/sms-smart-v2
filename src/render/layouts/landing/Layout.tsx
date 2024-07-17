@@ -2,6 +2,7 @@ import type { FC } from 'react';
 import type { LayoutProps } from '../../../js/interfaces';
 import Footer from './Footer';
 import Header from './Header';
+import React from 'react';
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (

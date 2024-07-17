@@ -1,3 +1,4 @@
+import React from 'react';
 import LoginSection from '../../sections/Landing/Login/LoginSection';
 import SwitchThemeSection from '../../sections/Landing/Login/SwitchThemeSection';
 

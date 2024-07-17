@@ -5,6 +5,7 @@ import EBlackImage from '../../../assets/icons/E-black.png';
 import EWhiteImage from '../../../assets/icons/E-white.png';
 import Footer from '../../../components/Sections/Landing/Login/Footer';
 import FormCard from '../../../components/Sections/Landing/Login/FormCard';
+import React from 'react';
 
 const LoginSection: React.FC<SectionProps> = ({ classNameSection }) => {
   const { theme } = useSwitchThemeStore();

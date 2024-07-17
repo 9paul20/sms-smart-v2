@@ -11,6 +11,8 @@ import { EyeFilledIcon } from '../../../UI/EyeFilledIcon ';
 import { EyeSlashFilledIcon } from '../../../UI/EyeSlashFileIcon';
 import { PasswordIcon } from '../../../UI/PasswordIcon';
 import { UserIcon } from '../../../UI/UserIcon';
+import React from 'react';
+import { Link as LinkRouter } from 'react-router-dom';
 
 function FormCard() {
   const { isVisible, toggleVisibility } = VisibilityPasswordStore();
@@ -34,12 +36,12 @@ function FormCard() {
             startContent={
               <UserIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
             }
-            // placeholder="username: Arbitrary name"
-            // status={errors?.username ? "error" : undefined}
-            // value={values?.username}
-            // label={errors?.username || "UserName"}
-            // onChange={handleChange}
-            // onBlur={handleBlur}
+          // placeholder="username: Arbitrary name"
+          // status={errors?.username ? "error" : undefined}
+          // value={values?.username}
+          // label={errors?.username || "UserName"}
+          // onChange={handleChange}
+          // onBlur={handleBlur}
           />
           <Spacer y={2} />
           <Input
@@ -68,19 +70,21 @@ function FormCard() {
                 )}
               </button>
             }
-            // placeholder="password: nextui.org"
-            // labelLeft={<Password set="bold" />}
-            // value={values?.password}
-            // status={errors?.password ? "error" : undefined}
-            // label={errors?.password || "Password"}
-            // onChange={handleChange}
-            // onBlur={handleBlur}
+          // placeholder="password: nextui.org"
+          // labelLeft={<Password set="bold" />}
+          // value={values?.password}
+          // status={errors?.password ? "error" : undefined}
+          // label={errors?.password || "Password"}
+          // onChange={handleChange}
+          // onBlur={handleBlur}
           />
         </CardBody>
         <Spacer />
         <CardFooter>
           <Button className="w-full text-lg font-semibold" color="primary">
-            Login
+            <LinkRouter to="/dashboard" unstable_viewTransition className="w-full">
+              Login
+            </LinkRouter>
           </Button>
         </CardFooter>
       </Card>

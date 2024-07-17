@@ -1,3 +1,4 @@
+import React from 'react';
 import type { IconProps } from '../../../js/interfaces';
 
 export const PasswordIcon: React.FC<IconProps> = (props) => (

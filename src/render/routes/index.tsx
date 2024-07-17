@@ -4,10 +4,15 @@ import {
   createBrowserRouter,
   useNavigation,
 } from 'react-router-dom';
-import DashboardLayout from '../layouts/Dashboard/Layout';
-import LandingLayout from '../layouts/Landing/Layout';
-import DashboardIndex from '../pages/Dashboard';
-import LandingLogin from '../pages/Landing/Login';
+import DashboardLayout from './../layouts/Dashboard/Layout';
+import LandingLayout from './../layouts/Landing/Layout';
+// import DashboardLayout from '@/render/layouts/Dashboard/Layout';
+// import LandingLayout from '@/render/layouts/Landing/Layout';
+import DashboardIndex from './../pages/Dashboard';
+import LandingLogin from './../pages/Landing/Login';
+// import DashboardLayout from '@/render/pages/Dashboard';
+// import LandingLayout from '@/render/pages/Landing/Login';
+import React from 'react';
 
 const router = createBrowserRouter([
   {
